@@ -16,4 +16,12 @@ u = urllib.request.urlopen('http://www.python.org/')
 data = u.read()
 
 
+''' this is an example showing try and except case
 
+for line in f:
+    fields = line.split()
+    try:
+        shares = int(fields[1])
+    except ValueError:
+        print("Couldnt parse", line)
+'''
